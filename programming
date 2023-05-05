@@ -22,3 +22,41 @@ int main()
     cout<<"The argument of cl1 is: "<<argcl1 <<"Gradus:"<<argcl1*180/pi<<endl;                                                                                    
     getch();
 }
+
+
+
+#include <iostream>
+#include<complex>
+using namespace std;
+
+int
+main ()
+{
+  double pi = 3.14159;
+  double real;
+  double image;
+  cin >> real;
+  cin >> image;
+  complex < double >cl1(real,image);
+  cin >> real;
+  cin >> image;
+  complex < double >cr2(real,image);
+  cout << "The left-side compplex number is cl1 = " << cl1 << endl;
+  cout << "The right-side complex number is cl1 = " << cr2 << endl;
+  complex < double >cs1 = cl1 + cr2;
+  cout << "The sum of the two complex  numbers is: cs1 = cl1 + cr1 = "
+    << cs1 << endl;
+    complex < double >cs2 = cl1 * cr2;
+  cout << "The multiply of the two complex  numbers is: cs2 = cl1 * cr1 = "
+    << cs2 << endl;
+    complex < double >cs3 = cl1 / cr2;
+  cout << "The multiply of the two complex  numbers is: cs2 = cl1 / cr1 = "
+    << cs3 << endl;
+  cout << "The complex number cr1 added to the complex number cl1 is:"
+    << "\n cl1 += cr1 = " << cl1 << endl;
+  double abscl1 = abs (cl1);
+  double argcl1 = arg (cl1);
+  cout << "The modul of cl1 is: " << abscl1 << endl;
+  cout << "The argument of cl1 is: " << argcl1 << "Gradus:" << argcl1 * 180 /
+    pi << endl;
+}
