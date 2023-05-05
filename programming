@@ -1,0 +1,24 @@
+#include <iostream>
+#include<conio.h>
+#include<complex>
+using namespace std;
+
+int main()
+{
+    double pi = 3.14159;
+    complex<double> cl1(polar(3.0,pi/6));
+    complex<double> cr2(polar(2.0,pi/3));
+    cout<<"The left-side compplex number is cl1 = " << cl1 <<endl;
+    cout<<"The right-side complex number is cl1 = "<<cr2<<endl;
+    complex<double> cs1 = cl1 + cr2;
+    cout<<"The sum of the two complex  numbers is: cs1 = cl1 + cr1 = "
+    <<cs1 <<endl;
+    double pi = 3.14159;
+    cout<<"The complex number cr1 added to the complex number cl1 is:"
+    <<"\n cl1 += cr1 = "<<cl1<<endl;
+    double abscl1 = abs(cl1);
+    double argcl1 = arg(cl1);
+    cout<<"The modul of cl1 is: "<<abscl1 <<endl; 
+    cout<<"The argument of cl1 is: "<<argcl1 <<"Gradus:"<<argcl1*180/pi<<endl;                                                                                    
+    getch();
+}
